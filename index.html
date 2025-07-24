@@ -1,0 +1,159 @@
+﻿@{
+    ViewData["Title"] = "Marnes van Eden | Cyber CV";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>@ViewData["Title"]</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(rgba(13, 17, 23, 0.95), rgba(13, 17, 23, 0.95)), /* Dark overlay for readability */
+            url('/images/right-side.jpg') no-repeat center center fixed; /* Your transparent image */
+            background-size: cover;
+            color: #c9d1d9;
+            line-height: 1.6;
+        }
+
+
+        header {
+            color: #00ffcc;
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 2px solid #00ffcc;
+        }
+
+        .profile-pic {
+            width: 200px;
+            height: 200px;
+            border-radius: 25%;
+            border: 3px solid #00ffcc;
+            margin-bottom: 15px;
+            box-shadow: 0 0 15px #00ffcc;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
+        }
+
+            .profile-pic:hover {
+                transform: scale(1.5); /* Grows to 115% size */
+                box-shadow: 0 0 25px #00ffcc; /* Stronger glow on hover */
+            }
+
+
+        .tagline {
+            font-size: 1.2em;
+            color: #99ffff;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+            background: #161b22;
+            border-radius: 8px;
+            box-shadow: 0 0 10px #00ffcc33;
+        }
+
+        section:hover {
+            box-shadow: 0 0 25px #00ffcc; /* Stronger glow on hover */
+        }
+
+        section {
+            margin-bottom: 40px;
+            border-radius: 10px;
+        }
+
+            section h2 {
+                border-bottom: 2px solid #00ffcc;
+                padding-bottom: 5px;
+                margin-bottom: 15px;
+                color: #00ffcc;
+            }
+
+        ul li::marker {
+            color: #00ffcc;
+        }
+
+        a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+
+            a:hover {
+                text-decoration: underline;
+                color: #00ffcc;
+            }
+
+        .contact a::before {
+            content: "🔗 ";
+        }
+
+
+        .page-wrapper {
+            background: rgba(22, 27, 34, 0.9);
+            z-index: 1;
+            margin: 0 auto;
+            padding: 30px;
+            max-width: 900px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page-wrapper">
+        <header>
+            <img src="~/images/profile.jpg" alt="Marnes van Eden" class="profile-pic" />
+            <h1>Marnes van Eden</h1>
+            <p class="tagline">Information Technology Student(BSc) | Cybersecurity Enthusiast</p>
+        </header>
+
+        <main>
+            <section class="about">
+                <h2>About Me</h2>
+                <p>
+                    I am a spontaneous, loyal, and hardworking Twenty-Three-year-old that enjoys life. I am a self-motivated, disciplined person and has clear goals. I get along with people very well and functions well in a group, and alone. I am able to analyze any situation and adapt accordingly.
+                    I matriculated in 2020 with 2 distinctions. I initially enrolled at the North West University Potchefstroom for a Bachelor’s Degree in Electrical Engineering, but found that I enjoyed the programming subjects more and decided to convert to BSc Information Technology. I successfully completed the first year of BSc Information Technology with 3 distinctions and second year with 7 distinctions with a current GPA of 70.85. I am currently enrolled in my 3rd year of BSc IT.
+                </p>
+            </section>
+
+            <section class="education">
+                <h2>Education</h2>
+                <ul>
+                    <li>Matriculated 2020 with a 76.7% Avg</li>
+                    <li>BSc Information Technology – North West University (2023–2025)</li>
+                </ul>
+            </section>
+
+            <section class="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>🔐 Networks, Cybersecurity, Data Analysis, Decision Support Systems, Databases</li>
+                    <li>💻 Programming languages: Java, Python, C#, C, C++, Delphi</li>
+                    <li>🖥️ Some experience in Linux (Kali, Arch, Ubuntu), Windows Server, SQL, Packet Tracer</li>
+                    <li>📑 Certificates: ISC2 Certified in CyberSecurity</li>
+                </ul>
+            </section>
+
+            <section class="experience">
+                <h2>Experience</h2>
+                <ul>
+                    <li>Assistant Student Mechanical Engineer Vacation work- Proconics (2022 - 3 Weeks)</li>
+                    <li>Assistant Draftsmen Vacation work - Gammatec (2023 - 5 Weeks)</li>
+                    <li>Shadow CMH IT professionals - CMH (2024 - 1 Week)</li>
+                </ul>
+            </section>
+
+            <section class="contact">
+                <h2>Contact</h2>
+                <p>📧 Email: <a href="mailto:marnes.vaneden@gmail.com">marnes.vaneden@gmail.com</a></p>
+                <p>🔗 Social: <a href="https://www.linkedin.com/in/marnes-van-eden-038b68251/">LinkedIn</a></p>
+                <p>🔗 GitHub: <a href="https://github.com/FrontalSun02">FrontalSun02</a></p>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
+
